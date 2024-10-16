@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análisis de Texto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Análisis de texto</h1>
+    <p>Introduzca un texto para analizarlo:</p>
+    <textarea id="text" rows="10" cols="50" placeholder="Escribe aquí el texto..."></textarea>
+    <div class="button-group">
+      <button onclick="count()">Contar</button>
+      <button onclick="letter_index()">Repeticiones de letras</button>
+      <button onclick="word_index()">Repeticiones de palabras</button>
+      <button onclick="sentence_index()">Repeticiones de frases</button>
+    </div>
+    <p>Buscar repeticiones que contienen:</p>
+    <input type="text" id="search" placeholder="Ingresa letras o palabras">
+    <div class="button-group">
+      <button onclick="search_letters()">Buscar letras</button>
+      <button onclick="search_words()">Buscar palabras</button>
+      <button onclick="search_sentences()">Buscar frases</button>
+    </div>
+    <pre id="view"></pre>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
